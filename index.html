@@ -1,0 +1,131 @@
+<h2>Residential Commission Calculator</h2>
+
+<div class="card">
+  <label>Total Job Cost</label>
+  <input id="res-cost" type="number" />
+</div>
+
+<div class="card">
+  <label>Total Amount Collected</label>
+  <input id="res-collected" type="number" />
+</div>
+
+<div class="card">
+  <label>Lead Source</label>
+  <select id="res-lead">
+    <option value="">Select One</option>
+    <option value="company">Company Lead</option>
+    <option value="self">Self-Generated</option>
+  </select>
+</div>
+
+<div class="card">
+  <label>Company Truck</label>
+  <select id="res-truck">
+    <option value="">Select One</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</div>
+
+<div class="card">
+  <label>Volume Accelerator</label>
+  <select id="res-accel">
+    <option value="0">None</option>
+    <option value="0.005">+0.5%</option>
+    <option value="0.01">+1.0%</option>
+    <option value="0.015">+1.5%</option>
+  </select>
+</div>
+
+<div class="warning" id="res-warning-low" style="display:none;">
+  Margin is below minimum residential threshold (22%). Commission = 0.
+</div>
+
+<div class="warning" id="res-warning-high" style="display:none;">
+  Margin exceeds 60%. Confirm all job costs have been entered.
+</div>
+
+<div class="results">
+  <div class="result-card"><span>Adjusted Cost:</span> <strong id="res-adjusted"></strong></div>
+  <div class="result-card"><span>Profit Dollars:</span> <strong id="res-profit"></strong></div>
+  <div class="result-card"><span>Profit Margin:</span> <strong id="res-margin"></strong></div>
+  <div class="result-card"><span>Commission %:</span> <strong id="res-percent"></strong></div>
+
+  <div class="result-card-large">
+    <span>Commission Dollars:</span>
+    <div class="big-number" id="res-commission"></div>
+  </div>
+</div>
+
+<h2>Commercial Commission Calculator</h2>
+
+<div class="card">
+  <label>Total Job Cost</label>
+  <input id="com-cost" type="number" />
+</div>
+
+<div class="card">
+  <label>Total Amount Collected</label>
+  <input id="com-collected" type="number" />
+</div>
+
+<div class="card">
+  <label>Lead Source</label>
+  <select id="com-lead">
+    <option value="">Select One</option>
+    <option value="company">Company Lead (0%)</option>
+    <option value="self">Self-Generated (+1%)</option>
+  </select>
+</div>
+
+<div class="card">
+  <label>Did Rep Project Manage?</label>
+  <select id="com-pm">
+    <option value="">Select One</option>
+    <option value="no">No (0%)</option>
+    <option value="yes">Yes (+1%)</option>
+  </select>
+</div>
+
+<div class="warning" id="com-warning-low" style="display:none;">
+  Margin is below minimum commercial threshold (15%). Commission = 0.
+</div>
+
+<div class="warning" id="com-warning-high" style="display:none;">
+  Margin exceeds 60%. Confirm all job costs have been entered.
+</div>
+
+<div class="results">
+  <div class="result-card"><span>Adjusted Cost:</span> <strong id="com-adjusted"></strong></div>
+  <div class="result-card"><span>Profit Dollars:</span> <strong id="com-profit"></strong></div>
+  <div class="result-card"><span>Profit Margin:</span> <strong id="com-margin"></strong></div>
+  <div class="result-card"><span>Commission %:</span> <strong id="com-percent"></strong></div>
+
+  <div class="result-card-large">
+    <span>Commission Dollars:</span>
+    <div class="big-number" id="com-commission"></div>
+  </div>
+</div>
+
+<h2>Water Restoration Commission Calculator</h2>
+
+<div class="card">
+  <label>Total Job Cost</label>
+  <input id="wat-cost" type="number" />
+</div>
+
+<div class="card">
+  <label>Total Amount Collected</label>
+  <input id="wat-collected" type="number" />
+</div>
+
+<div class="results">
+  <div class="result-card"><span>Profit Dollars:</span> <strong id="wat-profit"></strong></div>
+  <div class="result-card"><span>Profit Margin:</span> <strong id="wat-margin"></strong></div>
+
+  <div class="result-card-large">
+    <span>Commission Dollars (10%):</span>
+    <div class="big-number" id="wat-commission"></div>
+  </div>
+</div>
